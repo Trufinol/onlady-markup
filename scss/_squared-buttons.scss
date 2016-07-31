@@ -1,0 +1,28 @@
+%swiper-button-gray {
+  position: absolute;
+  background-color: #a6a6a6;
+  width: 32px;
+  height: 32px;
+  background-position: 12px 9px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  z-index: 5;
+}
+
+.squared-buttons {
+  position: relative;
+  z-index: 1;
+
+  &__next {
+    @extend %swiper-button-gray;
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="24" viewBox="0 0 50 50" width="24"><path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    right: 0px;
+    top: 0;
+  }
+  &__prev {
+    @extend %swiper-button-gray;
+    right: 40px;
+    top: 0;
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="24" viewBox="0 0 50 50" width="24"><path d="M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z"/></svg>');
+  }
+}

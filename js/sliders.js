@@ -2,18 +2,75 @@
 window.onload = function () {
 
   var fullScreenSwiper = new Swiper('.wide-swiper', {
-        pagination: '.wide-swiper__pagination',
-        paginationClickable: true,
+    pagination: '.wide-swiper__pagination',
+    paginationClickable: true,
 
-    });
+  });
 
-  var bagsSwiper = new Swiper('.b-swiper', {
+  var mainSwiper = new Swiper('.m-swiper-container', {
     loop: true,
     slidesPerView: 6,
     spaceBetween: 30,
-    nextButton: '.b-swiper__next',
-    prevButton: '.b-swiper__prev',
-    pagination: '.b-swiper__pagination'
-});
+    nextButton: '.m-swiper__next',
+    prevButton: '.m-swiper__prev',
+    breakpoints: {
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 40
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            770: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            560: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            400: {
+                slidesPerView: 1
+            }
+          }
+  });
+
+  var secondary1Swiper = new Swiper('.sec1-swiper-container', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    nextButton: '.sec1-swiper__next',
+    prevButton: '.sec1-swiper__prev',
+    breakpoints: {
+            580: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            400: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
+          }
+  });
+
+  var secondary2Swiper = new Swiper('.sec2-swiper-container', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    nextButton: '.sec2-swiper__next',
+    prevButton: '.sec2-swiper__prev',
+    breakpoints: {
+            580: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            400: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
+          },
+
+  });
 
 };
