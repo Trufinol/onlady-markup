@@ -11,8 +11,8 @@ window.onload = function () {
     loop: true,
     slidesPerView: 6,
     spaceBetween: 30,
-    nextButton: '.m-swiper__next',
-    prevButton: '.m-swiper__prev',
+    nextButton: '.m-swiper__prev',
+    prevButton: '.m-swiper__next',
     breakpoints: {
             1200: {
                 slidesPerView: 5,
@@ -25,13 +25,6 @@ window.onload = function () {
             770: {
                 slidesPerView: 3,
                 spaceBetween: 20
-            },
-            560: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            400: {
-                slidesPerView: 1
             }
           }
   });
@@ -40,37 +33,16 @@ window.onload = function () {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
-    nextButton: '.sec1-swiper__next',
-    prevButton: '.sec1-swiper__prev',
-    breakpoints: {
-            580: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            400: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            }
-          }
+    nextButton: '.sec1-swiper__prev',
+    prevButton: '.sec1-swiper__next'
   });
 
   var secondary2Swiper = new Swiper('.sec2-swiper-container', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
-    nextButton: '.sec2-swiper__next',
-    prevButton: '.sec2-swiper__prev',
-    breakpoints: {
-            580: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            400: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            }
-          },
-
+    nextButton: '.sec2-swiper__prev',
+    prevButton: '.sec2-swiper__next'
   });
 
 };
